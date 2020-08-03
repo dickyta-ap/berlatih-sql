@@ -38,3 +38,7 @@ Nomor 4
 a) SELECT id, name, email FROM users;
 b)  - SELECT * FROM items WHERE price > 1000000
     - SELECT * FROM `items` WHERE name LIKE '%watch%';
+c) SELECT items.name, description, price, stock, category_id, category.name as kategori FROM items INNER JOIN category ON items.category_id = category.id
+
+Nomor 5
+- UPDATE `items` SET `price` = '2500000' WHERE `items`.`id` = 1;
